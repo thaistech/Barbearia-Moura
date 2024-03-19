@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Contato - Barbearia Moura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="logo da barbearia moura"></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li><a href="produtos.html">produtos</a></li>
+						<li><a href="contatos.html">contatos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input class="input" type="text" id="sobrenome" required>
+				<label for="email">Email</label>
+				<input class="input" type="email" id="email" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input class="input" type="tel" id="telefone" required placeholder="(XX) XXXX-XXXX">
+
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem" required></textarea>
+
+				<fieldset>
+					<legend class="texto">Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+					
+				</fieldset>
+
+				<fieldset>
+					<legend class="texto">Qual o horario prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+				<input class="botaoenviar" type="submit" value="Enviar">		
+			</form>
+
+			<table> <!-- tabela -->
+				<thead> <!-- cabeçalho da tabela -->
+					<tr> <!-- linha da tabela-->
+						<th>Dia</th> <!-- celula do head da tabela -->
+						<th>Horário</th> <!-- celula do head da tabela -->
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Seguda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="logo branco da barbearia moura">
+			<p class="copyright">&copy; Copyright Barbearia Moura - 2023 &#9988;</p>
+		</footer>
+	</body>
+
+</html>		
